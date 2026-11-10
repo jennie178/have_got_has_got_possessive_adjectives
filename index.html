@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Have got / Has got + My, Your, His, Her, Its, Our, Their — Drill</title>
+<style>
+  *{box-sizing:border-box;}
+  body{
+    margin:0;padding:16px 12px 70px;
+    font-family:'Comic Sans MS','Trebuchet MS',Verdana,sans-serif;
+    background:linear-gradient(135deg,#eaf4ff 0%,#fff0f6 50%,#eafaf1 100%);
+    background-attachment:fixed;color:#2b2b3d;
+  }
+  .wrap{max-width:920px;margin:0 auto;}
+
+  header{
+    text-align:center;padding:20px 16px;border-radius:28px;color:#fff;
+    background:linear-gradient(90deg,#5aa9f5,#ff7ba5,#5aa9f5);
+    background-size:200% 100%;animation:shift 7s ease infinite;
+    text-shadow:2px 2px 0 rgba(0,0,0,.15);
+    box-shadow:0 10px 26px rgba(90,110,180,.22);
+  }
+  @keyframes shift{0%{background-position:0 50%}50%{background-position:100% 50%}100%{background-position:0 50%}}
+  header h1{margin:0;font-size:24px;line-height:1.2;}
+  header p{margin:8px 0 0;font-size:14px;opacity:.95;}
+  .stars{
+    display:inline-block;margin-top:12px;background:#fff;color:#f59f00;
+    padding:6px 20px;border-radius:999px;font-weight:bold;font-size:19px;
+    box-shadow:0 4px 0 #ffd166;
+  }
+
+  /* sticky rule bar */
+  .rule-bar{
+    position:sticky;top:6px;z-index:50;
+    display:flex;gap:10px;justify-content:center;flex-wrap:wrap;
+    padding:10px;border-radius:22px;margin:16px 0 20px;
+    background:rgba(255,255,255,.96);
+    box-shadow:0 8px 22px rgba(80,60,120,.18);
+  }
+  .rule-pill{
+    padding:8px 14px;border-radius:16px;font-weight:bold;font-size:14px;line-height:1.5;
+    display:flex;align-items:center;gap:8px;flex-wrap:wrap;
+  }
+  .rule-pill.blue{background:linear-gradient(160deg,#e7f3ff,#cfe6ff);border:2px solid #8ec5ff;color:#1b4b8f;}
+  .rule-pill.pink{background:linear-gradient(160deg,#ffe9f2,#ffd0e2);border:2px solid #ff9ec1;color:#c2185b;}
+  .rule-pill .k{background:#fff;border-radius:10px;padding:1px 8px;font-size:14px;}
+  .rule-pill .ar{opacity:.6;}
+
+  /* card */
+  .card{
+    background:#fff;border-radius:28px;overflow:hidden;margin:22px 0;
+    box-shadow:0 14px 34px rgba(80,60,120,.13);
+  }
+  .card-head{
+    padding:15px 22px;color:#fff;font-size:20px;font-weight:bold;
+    display:flex;align-items:center;gap:10px;
+    text-shadow:1px 1px 0 rgba(0,0,0,.15);
+  }
+  .c1{background:linear-gradient(90deg,#5aa9f5,#74c0fc);}
+  .c2{background:linear-gradient(90deg,#ff9f68,#ffc857);}
+  .c3{background:linear-gradient(90deg,#ff7ba5,#ffa8c5);}
+  .c4{background:linear-gradient(90deg,#6fd45c,#38d9a9);}
+  .card-body{padding:20px;}
+  .hint{margin:0 0 16px;font-size:14px;color:#6b7a99;}
+
+  /* TASK 1 */
+  .item{
+    padding:16px;border-radius:22px;margin-bottom:16px;
+    background:linear-gradient(160deg,#f7faff,#ffffff);
+    border:2px dashed #b8d4ff;
+  }
+  .item.pinkish{background:linear-gradient(160deg,#fff7fb,#ffffff);border-color:#ffc2dc;}
+  .item.done{background:linear-gradient(160deg,#eefbee,#ffffff);border-color:#8fdc7a;}
+  .item-top{display:flex;align-items:center;gap:12px;margin-bottom:10px;}
+  .item-top .em{font-size:34px;line-height:1;}
+  .item-top .subj{font-size:20px;font-weight:bold;color:#1565c0;background:#e7f3ff;padding:4px 14px;border-radius:12px;}
+  .item.pinkish .item-top .subj{color:#c2185b;background:#ffe9f2;}
+  .sent{font-size:19px;line-height:1.9;font-weight:bold;margin-bottom:12px;}
+  .blank{
+    display:inline-block;min-width:74px;text-align:center;border-radius:10px;
+    background:#eef2f8;border:2px dashed #b9c3d3;color:#9aa5bb;
+    padding:1px 8px;font-size:17px;
+  }
+  .blank.filled{background:#d8f5d0;border:2px solid #5cbf45;color:#2f7a1f;}
+  .mini-label{font-size:12px;color:#8a94ad;margin:0 0 6px;font-weight:bold;letter-spacing:.5px;}
+  .btns{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;}
+  .btn{
+    border:none;cursor:pointer;font-family:inherit;font-weight:bold;
+    padding:9px 16px;border-radius:999px;font-size:15px;
+    background:linear-gradient(180deg,#8ec5ff,#5aa9f5);color:#fff;
+    box-shadow:0 4px 0 #3a86d6;transition:.1s;
+  }
+  .btn:active{transform:translateY(3px);box-shadow:0 1px 0 #3a86d6;}
+  .btn.pink{background:linear-gradient(180deg,#ffa8c5,#ff7ba5);box-shadow:0 4px 0 #e05b88;}
+  .btn.green{background:linear-gradient(180deg,#9be58a,#6fd45c);box-shadow:0 4px 0 #4aa73a;}
+  .btn.orange{background:linear-gradient(180deg,#ffca7a,#ffa94d);box-shadow:0 4px 0 #e08b1f;}
+  .btn.grey{background:linear-gradient(180deg,#ffffff,#eef2f8);color:#3a4a6b;
+    box-shadow:0 4px 0 #b9c3d3;border:2px solid #c5d0e0;}
+  .btn.grey.right{background:linear-gradient(180deg,#5cd65c,#2fb32f)!important;color:#fff!important;
+    box-shadow:0 4px 0 #1e8a1e!important;border-color:#1e8a1e!important;}
+  .btn.grey.right::after{content:' ✓';}
+  .btn.grey.wrong{background:linear-gradient(180deg,#ff6b6b,#e03131)!important;color:#fff!important;
+    box-shadow:0 4px 0 #b91c1c!important;border-color:#b91c1c!important;
+    animation:shake .4s;}
+  .btn.grey.wrong::after{content:' ✗';}
+  .btn:disabled{opacity:.55;cursor:default;}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+
+  /* TASK 2 streak */
+  .streak-top{
+    display:flex;justify-content:space-between;align-items:center;gap:10px;
+    flex-wrap:wrap;margin-bottom:18px;
+  }
+  .streak-box{
+    background:linear-gradient(160deg,#fff4e0,#ffe6c2);border:3px solid #ffc857;
+    border-radius:18px;padding:8px 18px;font-weight:bold;font-size:17px;color:#a15c00;
+  }
+  .prog-box{
+    background:linear-gradient(160deg,#e7f3ff,#cfe6ff);border:3px solid #8ec5ff;
+    border-radius:18px;padding:8px 18px;font-weight:bold;font-size:17px;color:#1565c0;
+  }
+  .flash-card{
+    text-align:center;padding:24px 16px;border-radius:26px;
+    background:linear-gradient(160deg,#f7faff,#ffffff);
+    border:3px dashed #b8d4ff;margin-bottom:16px;
+  }
+  .flash-card .big-em{font-size:64px;line-height:1;}
+  .flash-card .big-subj{font-size:28px;font-weight:bold;color:#1565c0;margin:6px 0 4px;}
+  .flash-card .q-line{font-size:19px;font-weight:bold;color:#3a4a6b;margin-top:8px;}
+  .flash-card .opts{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:16px;}
+  .flash-card .opts .btn{font-size:17px;padding:12px 22px;min-width:110px;}
+
+  /* TASK 3 error */
+  .err-item{
+    padding:16px;border-radius:22px;margin-bottom:16px;
+    background:linear-gradient(160deg,#fff7fb,#ffffff);border:2px dashed #ffc2dc;
+  }
+  .err-words{display:flex;gap:8px;flex-wrap:wrap;font-size:19px;}
+  .word{
+    padding:5px 10px;border-radius:12px;cursor:pointer;font-weight:bold;
+    background:#f1f5fb;border:2px solid transparent;transition:.12s;user-select:none;
+  }
+  .word:hover{background:#e7f3ff;border-color:#8ec5ff;}
+  .word.wrong-pick{background:#ffd6d6!important;border-color:#ff6b6b!important;
+    color:#c92a2a;text-decoration:line-through;animation:shake .4s;}
+  .word.found{background:#d8f5d0!important;border-color:#5cbf45!important;color:#2f7a1f;}
+  .err-fix{margin-top:10px;font-size:16px;color:#2f9e44;font-weight:bold;display:none;}
+  .err-fix.show{display:block;}
+
+  /* TASK 4 */
+  .type-row{
+    padding:16px;border-radius:22px;margin-bottom:14px;
+    background:linear-gradient(160deg,#f2fff7,#ffffff);border:2px dashed #a8e6b3;
+  }
+  .type-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+  .type-top .em{font-size:32px;}
+  .type-top .subj{font-size:19px;font-weight:bold;color:#1565c0;}
+  .type-sent{font-size:18px;font-weight:bold;line-height:2.2;}
+  .type-sent input{
+    font-family:inherit;font-size:17px;font-weight:bold;text-align:center;
+    padding:8px 10px;border-radius:12px;border:3px solid #a8e6b3;
+    outline:none;background:#fff;color:#1b4b8f;width:130px;
+  }
+  .type-sent input.pos{border-color:#ffb3cd;color:#c2185b;width:110px;}
+  .type-sent input:focus{box-shadow:0 0 0 4px rgba(111,212,92,.25);}
+  .type-sent input.ok{border-color:#5cbf45!important;background:#eefbee;}
+  .type-sent input.no{border-color:#ff6b6b!important;background:#fff0f0;}
+
+  .feedback{font-size:16px;font-weight:bold;min-height:22px;margin-top:8px;}
+  .feedback.good{color:#2f9e44;}
+  .feedback.bad{color:#e03131;}
+
+  footer{text-align:center;font-size:15px;color:#6b7a99;padding:24px;}
+
+  @media(max-width:560px){
+    .card-body{padding:15px;}
+    header h1{font-size:20px;}
+    .sent{font-size:17px;}
+    .flash-card .big-em{font-size:52px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>🔑 Have got / Has got + My, Your, His, Her, Its, Our, Their</h1>
+    <p>Одна связка · два правила · много повторений</p>
+    <div class="stars" id="stars">⭐ 0</div>
+  </header>
+
+  <!-- STICKY RULE -->
+  <div class="rule-bar">
+    <div class="rule-pill blue">
+      <span>I · you · we · they</span><span class="ar">→</span>
+      <span class="k">have got</span><span class="ar">→</span>
+      <span class="k">my · your · our · their</span>
+    </div>
+    <div class="rule-pill pink">
+      <span>he · she · it</span><span class="ar">→</span>
+      <span class="k">has got</span><span class="ar">→</span>
+      <span class="k">his · her · its</span>
+    </div>
+  </div>
+
+  <!-- ================= TASK 1 ================= -->
+  <section class="card">
+    <div class="card-head c1">1️⃣ Два выбора в одном предложении</div>
+    <div class="card-body">
+      <p class="hint">
+        В каждом предложении <b>два пропуска</b>. Сначала выбери <b>have got / has got</b>,
+        потом <b>притяжательное местоимение</b>. Смотри на цвет подлежащего и на подсказку сверху.
+      </p>
+      <div id="task1"></div>
+      <div class="feedback" id="fb1"></div>
+    </div>
+  </section>
+
+  <!-- ================= TASK 2 ================= -->
+  <section class="card">
+    <div class="card-head c2">2️⃣ Быстрая разминка · streak</div>
+    <div class="card-body">
+      <div class="streak-top">
+        <div class="streak-box">🔥 Streak: <span id="streak">0</span></div>
+        <div class="prog-box">✅ <span id="t2done">0</span> / <span id="t2total">0</span></div>
+      </div>
+      <p class="hint">Смотри на подлежащее и выбирай правильное слово. Ошибся — streak обнуляется, но можно продолжать.</p>
+      <div id="task2"></div>
+      <div class="feedback" id="fb2"></div>
+    </div>
+  </section>
+
+  <!-- ================= TASK 3 ================= -->
+  <section class="card">
+    <div class="card-head c3">3️⃣ Найди ошибку</div>
+    <div class="card-body">
+      <p class="hint">В каждом предложении <b>одна ошибка</b>. Нажми на неправильное слово.</p>
+      <div id="task3"></div>
+      <div class="feedback" id="fb3"></div>
+    </div>
+  </section>
+
+  <!-- ================= TASK 4 ================= -->
+  <section class="card">
+    <div class="card-head c4">4️⃣ Допиши сам</div>
+    <div class="card-body">
+      <p class="hint">Впиши <b>have got</b> или <b>has got</b>, потом <b>my / your / his / her / its / our / their</b>. Потом нажми Check.</p>
+      <div id="task4"></div>
+      <button class="btn green" onclick="checkTask4()">✅ Check</button>
+      <div class="feedback" id="fb4"></div>
+    </div>
+  </section>
+
+  <footer>🌈 Отличная работа! See you at the lesson ⭐</footer>
+</div>
+
+<script>
+/* ============ helpers ============ */
+function speak(text){
+  if(!('speechSynthesis' in window)) return;
+  window.speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-GB'; u.rate = 0.75; u.pitch = 1.1;
+  window.speechSynthesis.speak(u);
+}
+let stars = 0;
+function addStar(n){
+  stars += (n||1);
+  document.getElementById('stars').textContent = '⭐ ' + stars;
+}
+function setFb(id, text, cls){
+  const el = document.getElementById(id);
+  el.textContent = text;
+  el.className = 'feedback ' + (cls||'');
+}
+
+/* ============================================================
+   TASK 1 — two blanks per sentence
+   ВАЖНО: в шаблоне больше НЕТ "got" после первого пропуска,
+   потому что "have got / has got" вставляется целиком.
+   ============================================================ */
+const T1 = [
+  {em:'🙂', subj:'I',    v:'have got', p:'my',    s:'I ___ a cat. ___ cat is white.',         opts:['my','his','their']},
+  {em:'👦', subj:'He',   v:'has got',  p:'his',   s:'He ___ a bike. ___ bike is new.',        opts:['his','her','my']},
+  {em:'👧', subj:'She',  v:'has got',  p:'her',   s:'She ___ a doll. ___ doll is pink.',      opts:['her','his','our']},
+  {em:'👥', subj:'They', v:'have got', p:'their', s:'They ___ a dog. ___ dog is big.',        opts:['their','its','my']},
+  {em:'👨‍👩‍👧', subj:'We', v:'have got', p:'our',   s:'We ___ a house. ___ house is small.',    opts:['our','your','his']},
+  {em:'👉', subj:'You',  v:'have got', p:'your',  s:'You ___ a bag. ___ bag is nice.',        opts:['your','my','her']},
+  {em:'🐈', subj:'It',   v:'has got',  p:'its',   s:'It ___ a tail. ___ tail is long.',       opts:['its','his','their']},
+  {em:'👦', subj:'He',   v:'has got',  p:'his',   s:'He ___ a ball. ___ ball is red.',        opts:['his','its','your']},
+  {em:'👧', subj:'She',  v:'has got',  p:'her',   s:'She ___ a kitten. ___ kitten is funny.', opts:['her','their','my']},
+  {em:'👥', subj:'They', v:'have got', p:'their', s:'They ___ two cars. ___ cars are fast.',  opts:['their','our','his']}
+];
+
+const t1box = document.getElementById('task1');
+let t1done = 0;
+
+T1.forEach((item, i)=>{
+  const isPink = item.subj === 'He' || item.subj === 'She' || item.subj === 'It';
+  const card = document.createElement('div');
+  card.className = 'item' + (isPink ? ' pinkish' : '');
+  card.id = 't1_' + i;
+
+  const parts = item.s.split('___');
+  const sentHTML = `${parts[0]}<span class="blank" id="v1_${i}">?</span>${parts[1]}<span class="blank" id="p1_${i}">?</span>${parts[2]}`;
+
+  card.innerHTML = `
+    <div class="item-top">
+      <span class="em">${item.em}</span>
+      <span class="subj">${item.subj}</span>
+    </div>
+    <div class="sent">${sentHTML}</div>
+
+    <p class="mini-label">1) ВЫБЕРИ ГЛАГОЛ</p>
+    <div class="btns" data-role="verb"></div>
+
+    <p class="mini-label">2) ВЫБЕРИ МЕСТОИМЕНИЕ</p>
+    <div class="btns" data-role="poss"></div>
+  `;
+  t1box.appendChild(card);
+
+  let vOk = false, pOk = false;
+
+  // verb buttons
+  const vWrap = card.querySelector('[data-role="verb"]');
+  ['have got','has got'].forEach(opt=>{
+    const b = document.createElement('button');
+    b.className = 'btn grey';
+    b.textContent = opt;
+    b.onclick = ()=>{
+      if(vOk) return;
+      if(opt === item.v){
+        b.classList.add('right');
+        document.getElementById('v1_'+i).textContent = opt;
+        document.getElementById('v1_'+i).classList.add('filled');
+        vWrap.querySelectorAll('button').forEach(x=>x.disabled = true);
+        vOk = true;
+        speak(item.subj + ' ' + item.v);
+        if(vOk && pOk) finish(i);
+      } else {
+        b.classList.add('wrong');
+        setTimeout(()=>b.classList.remove('wrong'), 700);
+        setFb('fb1','Смотри на подлежащее: ' + item.subj + ' — какой столбик? 🤔','bad');
+      }
+    };
+    vWrap.appendChild(b);
+  });
+
+  // possessive buttons
+  const pWrap = card.querySelector('[data-role="poss"]');
+  item.opts.slice().sort(()=>Math.random()-0.5).forEach(opt=>{
+    const b = document.createElement('button');
+    b.className = 'btn grey';
+    b.textContent = opt;
+    b.onclick = ()=>{
+      if(pOk) return;
+      if(opt === item.p){
+        b.classList.add('right');
+        document.getElementById('p1_'+i).textContent = opt;
+        document.getElementById('p1_'+i).classList.add('filled');
+        pWrap.querySelectorAll('button').forEach(x=>x.disabled = true);
+        pOk = true;
+        speak(item.s.replace('___', item.v).replace('___', item.p));
+        if(vOk && pOk) finish(i);
+      } else {
+        b.classList.add('wrong');
+        setTimeout(()=>b.classList.remove('wrong'), 700);
+        setFb('fb1','Подлежащее ' + item.subj + ' — чьё это? Вспомни второй столбик 🙂','bad');
+      }
+    };
+    pWrap.appendChild(b);
+  });
+
+  function finish(idx){
+    document.getElementById('t1_'+idx).classList.add('done');
+    t1done++;
+    addStar();
+    if(t1done === T1.length){
+      setFb('fb1','🎉 Все 10 предложений готовы! Ты понял связку!','good');
+    } else {
+      setFb('fb1','✅ Отлично! Дальше 👉','good');
+    }
+  }
+});
+
+/* ============================================================
+   TASK 2 — streak drill
+   (здесь пропуск стоит ПЕРЕД существительным, слова "got" нет —
+   всё уже корректно, ничего менять не нужно)
+   ============================================================ */
+const T2 = [
+  {em:'👦', subj:'He',   q:'___ dog is funny.',           opts:['his','her','their'],    ans:'his'},
+  {em:'👧', subj:'She',  q:'She ___ a doll.',             opts:['have got','has got'],   ans:'has got'},
+  {em:'👥', subj:'They', q:'___ car is red.',             opts:['their','its','my'],     ans:'their'},
+  {em:'🙂', subj:'I',    q:'I ___ a book.',               opts:['have got','has got'],   ans:'have got'},
+  {em:'🐈', subj:'It',   q:'___ tail is long.',           opts:['its','his','our'],      ans:'its'},
+  {em:'👨‍👩‍👧', subj:'We', q:'___ house is big.',         opts:['our','your','her'],     ans:'our'},
+  {em:'👉', subj:'You',  q:'___ bag is new.',             opts:['your','my','his'],      ans:'your'},
+  {em:'👦', subj:'He',   q:'He ___ a bike.',              opts:['have got','has got'],   ans:'has got'},
+  {em:'👧', subj:'She',  q:'___ doll is pink.',           opts:['her','his','its'],      ans:'her'},
+  {em:'👥', subj:'They', q:'They ___ a big dog.',         opts:['have got','has got'],   ans:'have got'},
+  {em:'🙂', subj:'I',    q:'___ mum is kind.',            opts:['my','your','their'],    ans:'my'},
+  {em:'🐈', subj:'It',   q:'It ___ a long tail.',         opts:['have got','has got'],   ans:'has got'}
+];
+
+const t2box = document.getElementById('task2');
+const streakEl = document.getElementById('streak');
+const t2doneEl = document.getElementById('t2done');
+document.getElementById('t2total').textContent = T2.length;
+
+let streak = 0, t2done = 0, t2queue = T2.slice().sort(()=>Math.random()-0.5);
+
+function renderT2(){
+  if(t2queue.length === 0){
+    t2box.innerHTML = `<div class="flash-card">
+      <div class="big-em">🏆</div>
+      <div class="big-subj">Done!</div>
+      <div class="q-line">Все ${T2.length} заданий пройдены!</div>
+    </div>`;
+    setFb('fb2','🎉 Отлично! Ты справился со всей разминкой!','good');
+    return;
+  }
+  const item = t2queue[0];
+  const isPink = item.subj === 'He' || item.subj === 'She' || item.subj === 'It';
+
+  t2box.innerHTML = `
+    <div class="flash-card">
+      <div class="big-em">${item.em}</div>
+      <div class="big-subj" style="${isPink?'color:#c2185b':''}">${item.subj}</div>
+      <div class="q-line">${item.q}</div>
+      <div class="opts" id="t2opts"></div>
+    </div>`;
+
+  const optsEl = document.getElementById('t2opts');
+  item.opts.slice().sort(()=>Math.random()-0.5).forEach(opt=>{
+    const b = document.createElement('button');
+    b.className = 'btn grey';
+    b.textContent = opt;
+    b.onclick = ()=>{
+      if(opt === item.ans){
+        b.classList.add('right');
+        streak++;
+        t2done++;
+        streakEl.textContent = streak;
+        t2doneEl.textContent = t2done;
+        addStar();
+        speak(item.q.replace('___', item.ans));
+        setFb('fb2','🔥 Streak: ' + streak,'good');
+        setTimeout(()=>{ t2queue.shift(); renderT2(); }, 450);
+      } else {
+        b.classList.add('wrong');
+        setTimeout(()=>b.classList.remove('wrong'), 700);
+        streak = 0;
+        streakEl.textContent = 0;
+        setFb('fb2','Streak обнулился 💥 Попробуй ещё!','bad');
+      }
+    };
+    optsEl.appendChild(b);
+  });
+}
+renderT2();
+
+/* ============================================================
+   TASK 3 — find the mistake
+   ============================================================ */
+const T3 = [
+  {words:['She','have','got','a','doll.'],                     bad:1, fix:'has', full:'She has got a doll.'},
+  {words:['He','has','got','a','dog.','Her','dog','is','funny.'], bad:5, fix:'His', full:'He has got a dog. His dog is funny.'},
+  {words:['They','has','got','a','car.'],                      bad:1, fix:'have', full:'They have got a car.'},
+  {words:['I','have','got','a','book.','His','book','is','new.'], bad:5, fix:'My', full:'I have got a book. My book is new.'},
+  {words:['It','has','got','a','tail.','His','tail','is','long.'], bad:5, fix:'Its', full:'It has got a tail. Its tail is long.'},
+  {words:['We','have','got','a','house.','Their','house','is','big.'], bad:5, fix:'Our', full:'We have got a house. Our house is big.'}
+];
+
+const t3box = document.getElementById('task3');
+let t3done = 0;
+
+T3.forEach((item, i)=>{
+  const card = document.createElement('div');
+  card.className = 'err-item';
+  card.innerHTML = `<div class="err-words" id="t3w_${i}"></div>
+    <div class="err-fix" id="t3f_${i}">✅ Correct: <b>${item.full}</b></div>`;
+
+  const row = card.querySelector('.err-words');
+  item.words.forEach((w, idx)=>{
+    const s = document.createElement('span');
+    s.className = 'word';
+    s.textContent = w;
+    s.onclick = ()=>{
+      if(card.dataset.done) return;
+      if(idx === item.bad){
+        s.classList.remove('wrong-pick');
+        s.classList.add('found');
+        s.textContent = item.fix;
+        card.dataset.done = '1';
+        document.getElementById('t3f_'+i).classList.add('show');
+        t3done++;
+        addStar();
+        speak(item.full);
+        if(t3done === T3.length){
+          setFb('fb3','🎉 Все ошибки найдены! Молодец!','good');
+        } else {
+          setFb('fb3','✅ Верно! Ошибка найдена.','good');
+        }
+      } else {
+        s.classList.add('wrong-pick');
+        setTimeout(()=>s.classList.remove('wrong-pick'), 600);
+        setFb('fb3','Это слово правильное. Ищи другое 🔍','bad');
+      }
+    };
+    row.appendChild(s);
+  });
+
+  t3box.appendChild(card);
+});
+
+/* ============================================================
+   TASK 4 — type it
+   ВАЖНО: в шаблоне больше НЕТ "got" после первого пропуска —
+   "have got / has got" ребёнок печатает целиком.
+   ============================================================ */
+const T4 = [
+  {em:'👦', subj:'Tom',  s:'Tom ___ a bike. ___ bike is new.',       v:'has got',  p:'his'},
+  {em:'👧', subj:'Ann',  s:'Ann ___ a doll. ___ doll is pink.',      v:'has got',  p:'her'},
+  {em:'👥', subj:'They', s:'They ___ a dog. ___ dog is big.',        v:'have got', p:'their'},
+  {em:'👨‍👩‍👧', subj:'We', s:'We ___ a house. ___ house is small.',   v:'have got', p:'our'},
+  {em:'🐈', subj:'It',   s:'It ___ a tail. ___ tail is long.',       v:'has got',  p:'its'},
+  {em:'👉', subj:'You',  s:'You ___ a bag. ___ bag is nice.',        v:'have got', p:'your'}
+];
+
+const t4box = document.getElementById('task4');
+T4.forEach((item, i)=>{
+  const parts = item.s.split('___');
+  const row = document.createElement('div');
+  row.className = 'type-row';
+  row.innerHTML = `
+    <div class="type-top">
+      <span class="em">${item.em}</span>
+      <span class="subj">${item.subj}</span>
+    </div>
+    <div class="type-sent">
+      ${parts[0]}<input id="t4v_${i}" placeholder="have got / has got">
+      ${parts[1]}<input class="pos" id="t4p_${i}" placeholder="my / his / her...">
+      ${parts[2]}
+    </div>`;
+  t4box.appendChild(row);
+});
+
+function norm(s){
+  return s.toLowerCase().trim()
+    .replace(/\s+/g,' ')
+    .replace(/'ve got/g,'have got')
+    .replace(/'s got/g,'has got');
+}
+
+function checkTask4(){
+  let ok = 0;
+  T4.forEach((item, i)=>{
+    const vEl = document.getElementById('t4v_'+i);
+    const pEl = document.getElementById('t4p_'+i);
+    vEl.classList.remove('ok','no');
+    pEl.classList.remove('ok','no');
+    const v = norm(vEl.value);
+    const p = norm(pEl.value);
+    let good = true;
+    if(v === item.v) vEl.classList.add('ok'); else { vEl.classList.add('no'); good = false; }
+    if(p === item.p) pEl.classList.add('ok'); else { pEl.classList.add('no'); good = false; }
+    if(good) ok++;
+  });
+  const fb = document.getElementById('fb4');
+  if(ok === T4.length){
+    fb.textContent = '🎉 Perfect! Всё правильно! Ты запомнил связку!';
+    fb.className = 'feedback good';
+    addStar(3);
+  } else {
+    fb.textContent = `Правильно: ${ok} из ${T4.length}. Исправь красное и нажми Check 💪`;
+    fb.className = 'feedback bad';
+  }
+}
+</script>
+</body>
+</html>
